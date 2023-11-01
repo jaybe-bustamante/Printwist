@@ -68,6 +68,18 @@ body, h1, h2, h3, h4, h5, h6, p{
     font-size: 0.90rem;
 }
 
+.small-text {
+    font-size: 0.73rem !important;
+}
+
+th, td {
+    color: #2d609c !important;
+}
+
+.ptcolor {
+    color: #2d609c !important;
+}
+
 body {
     background-image: url(images/background-subtle-white.jpg);
     background-repeat: no-repeat;
@@ -692,4 +704,61 @@ body {
     .invalid-tooltip {
         background-color: #23558e !important;
 
+    }
+
+
+/* Carousel Mockup */
+
+    
+
+    .mockupcontainer {
+        max-width: 27rem;
+    }
+
+    .mcarousel {
+        max-width: 27rem;
+    }
+
+    .carousel-indicators div {
+        width: 4.8rem !important;
+        height: 4.8rem !important;
+        margin-inline:  .25rem !important;
+    }
+
+    .carousel-indicators {
+        margin: auto 0 !important;
+    }
+
+    .indicator-1 {
+        background-image: url(images/mu-1.jpg) !important;
+        background-size: contain;
+    }
+
+    .indicator-2 {
+        background-image: url(images/mu-2.jpg) !important;
+        background-size: contain;
+    }
+
+    .indicator-3 {
+        background-image: url(images/mu-3.jpg) !important;
+        background-size: contain;
+    }
+
+    .indicator-4 {
+        background-image: url(images/mu-4.jpg) !important;
+        background-size: contain;
+    }
+
+    .indicator-5 {
+        background-image: url(images/mu-5.jpg) !important;
+        background-size: contain;
+    }
+
+    @media (width < 465px) {
+        .carousel-indicators div {
+            width: 15.5vw !important;
+            height: 15.5vw !important;
+            margin-inline:  .7vw !important;
+        }
+        
     }

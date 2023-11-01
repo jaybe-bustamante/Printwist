@@ -7,9 +7,11 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
+    
     gtag('config', 'G-CMYYX7DTWW');
     </script>
+
+    <meta http-equiv="refresh" content="10;url=dashboard.html">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -19,20 +21,20 @@
     <!-- Google font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <script defer src="entrance.js"></script>
 
-    <title>About Us</title>
+    <title>Item Listed</title>
 </head>
 <body>
     <!-- Header and Navbar -->
-    <header class="sticky-sm-top">
-        <nav class="navbar navbar-expand-lg py-md-2 sticky-top">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg py-md-2">
             <div class="container-xl">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="/">
                     <img class="img-fluid navbar-brand logo" src="images/Printwist-logo.png" alt="Printwist-logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarButtonMenu" aria-controls="navbarButtonMenu" aria-label="Toggle navigation">
@@ -62,7 +64,7 @@
                                 <a class="nav-link" href="howitworks.html">How it Works</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link active" href="aboutus.html">About Us</a>
+                                <a class="nav-link" href="aboutus.html">About Us</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="faq.html">FAQ</a>
@@ -81,8 +83,8 @@
                 </div>
             </div>
         </nav>
-</header>
-
+    </header>
+    
     <!-- Log-in Modal -->
     <div class="modal fade" id="loginmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -197,96 +199,49 @@
 
 
 
-    <!-- About content -->
-    <section class="sec py-4">
-        <div class="h4 text-center bold m-0">About Us</div>
-
-        <div class="hidden container-md mt-4">
-
-            <div class="d-flex justify-content-center">
-                <img class="img-fluid mb-3" src="images/Printwist-logo.png" alt="Printwist logo" style="width: 20rem; height: auto;">
+    <!-- Product item Content -->
+    <section class="container-fluid sec py-4">
+        <h4 class="h4 text-center mb-5 bold">Your Item has been Listed</h4>
+        <div class="container-lg px-0">
+            <div class="h5 text-center mb-3">Great Job! You're design and product has been in our <a href="store.html" class="a-link h5 bold">Store</a>.
             </div>
+            <div class="h5 text-center mb-3">You will be redirected in your Dashboard. If not <a href="dashboard.html" class="a-link h5 bold">Click Here.</a></div>
 
-            <div class="d-flex justify-content-center">
-                <p class="text-center abouttext">
-                    Welcome to the <strong class="h4 bold">Printwist</strong> world! We're not your typical print-on-demand apparel platform. In fact, we're the most unique group you'll ever meet.
-                </p>
-            </div>
 
-            <div class="d-flex flex-wrap justify-content-center align-items-center">
-                <div>
-                    <img src="images/the-team.jpeg" alt="the team" class="img-fluid img-thumbnail" style="width: 18rem; height: auto;">
-                </div>
-                <div class="text-wrap abouttext abtxt1 ps-3">
-                    In short, we're a group of design enthusiasts who love clothes and believe that fashion should reflect the person you are. <strong class="h5 medium">One t-shirt (or hoodie, or tank top)</strong> at a time, we're on a quest to make your most outrageous design ideas come true.
-                </div>
-            </div>
-
-            <div class="d-flex flex-wrap justify-content-center align-items-center my-2">
-                <p class=" abtxt2 abouttext">
-                    Making your ideas "pop off onto the canvas" is our superpower, and we live and breathe creation. When we're not making up fresh design concepts over cups of coffee, we're hard at work developing our expertise of printing your creations on top-notch apparel. 
-                </p>
-                <div>
-                    <img src="images/superhero.jpg" alt="superhero" class="img-fluid" style="width: 14rem; height: auto;">
-                </div>
-
-            </div>
-
-            <div class="d-flex justify-content-center mb-3">
-                <div class="text-center">
-                    <img src="images/store-bg.jpg" alt="T-shirts" style="width: 80%; height: auto;" class="img-fluid">
-                </div>
-            </div>
-            <div class="d-flex justify-content-center">
-                <p class="abouttext text-center">
-                    We at  <strong class="h4 bold">Printwist</strong> are serious about our work, but we're never too serious about ourselves. Therefore, whether you're an experienced designer or just trying to impress your cat with a custom sweater, we're here for you.
-                </p>
-            </div>
-
-        </div>        
-        
+        </div>
     </section>
 
-    <!-- CTA -->
-    <section class="CTA container-fluid d-flex">
-        <div class="container-md align-self-center">
-            <div class="d-flex flex-column">
-                <div class="h3 text-white text-center bold align-self-center">Enough about us, Tell us about yourself.</div>
-                <div class=" align-self-center mt-2"><a type="button" data-bs-toggle="modal" data-bs-target="#regmodal" class="btn ptbtn1">Register Here</a> </div>
-            </div>
-        </div>
 
-    </section>
 
-   <!-- Footer -->
-    <footer class="ptfooter pt-5">
-        <div class="container-md">
-            <div class="d-flex flex-wrap justify-content-md- justify-content-around align-items-center mx-xl-3">
-                <div class="ptlogo">
-                    <a href="index.html"><img class="logo-footer py-2 px-3" src="images/Printwist-logo-footer.png" alt="footer logo"></a>
-                </div>
-                <div class="d-flex flex-wrap justify-content-center py-4 text-center">
-                    <div class="pe-4 ju"><a href="catalog.html" class="link-light text-decoration-none footer-link">Catalog</a></div>
-                    <div class="pe-4"><a href="store.html" class="link-light text-decoration-none footer-link">Store</a></div>
-                    <div class="pe-4"><a href="howitworks.html" class="link-light text-decoration-none footer-link">How it Works</a></div>
-                    <div class="pe-4"><a href="aboutus.html" class="link-light text-decoration-none footer-link">About Us</a></div>
-                    <div class="pe-4"><a href="faq.html" class="link-light text-decoration-none footer-link">FAQ</a></div>
-                    <div class="pe-1"><a href="contactus.html" class="link-light text-decoration-none footer-link">Contact Us</a></div>
-                </div>
-                <div class="d-flex">
-                    <div class="smedia-icon"><a href="https://www.facebook.com/" class="bi-facebook px-3 pe-sm-4 smedia-icon"></a></div>
-                    <div class="smedia-icon"><a href="https://twitter.com/home" class="bi-twitter-x pe-3 pe-sm-4 smedia-icon"></a></div>
-                    <div class="smedia-icon"><a href="https://www.instagram.com/" class="bi-instagram pe-3 pe-sm-4 smedia-icon"></a></div>
-                    <div class="smedia-icon"><a href="https://www.youtube.com/" class="bi-youtube smedia-icon"></a></div>
-                </div>
+    <!-- Footer -->
+    <footer class="ptfooter pt-5 less-content-footer">
+    <div class="container-md">
+        <div class="d-flex flex-wrap justify-content-md- justify-content-around align-items-center mx-xl-3">
+            <div class="ptlogo">
+                <a href="index.html"><img class="logo-footer py-2 px-3" src="images/Printwist-logo-footer.png" alt="footer logo"></a>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center py-4 text-center">
+                <div class="pe-4 ju"><a href="catalog.html" class="link-light text-decoration-none footer-link">Catalog</a></div>
+                <div class="pe-4"><a href="store.html" class="link-light text-decoration-none footer-link">Store</a></div>
+                <div class="pe-4"><a href="howitworks.html" class="link-light text-decoration-none footer-link">How it Works</a></div>
+                <div class="pe-4"><a href="aboutus.html" class="link-light text-decoration-none footer-link">About Us</a></div>
+                <div class="pe-4"><a href="faq.html" class="link-light text-decoration-none footer-link">FAQ</a></div>
+                <div class="pe-1"><a href="contactus.html" class="link-light text-decoration-none footer-link">Contact Us</a></div>
+            </div>
+            <div class="d-flex">
+                <div class="smedia-icon"><a href="https://www.facebook.com/" class="bi-facebook px-3 pe-sm-4 smedia-icon"></a></div>
+                <div class="smedia-icon"><a href="https://twitter.com/home" class="bi-twitter-x pe-3 pe-sm-4 smedia-icon"></a></div>
+                <div class="smedia-icon"><a href="https://www.instagram.com/" class="bi-instagram pe-3 pe-sm-4 smedia-icon"></a></div>
+                <div class="smedia-icon"><a href="https://www.youtube.com/" class="bi-youtube smedia-icon"></a></div>
             </div>
         </div>
-        <div class="d-flex mt-5 justify-content-center container-fluid py-2 pb-3">
-            <div class="footernote text-center">
-                <a href="privacy-terms.html" class="footernotelink text-decoration-none">Privacy Policy </a> | <a href="privacy-terms.html" class="footernotelink text-decoration-none">Terms of Service</a><br>
-                © 2023 Printwist All rights reserved.
-            </div>
+    </div>
+    <div class="d-flex mt-5 justify-content-center container-fluid py-2 pb-3">
+        <div class="footernote text-center">
+            <a href="privacy-terms.html" class="footernotelink text-decoration-none">Privacy Policy </a> | <a href="privacy-terms.html" class="footernotelink text-decoration-none">Terms of Service</a><br>
+            © 2023 Printwist All rights reserved.
         </div>
+    </div>
     </footer>    
 
     <!-- Bootstrap script -->
@@ -300,10 +255,10 @@
         // Example starter JavaScript for disabling form submissions if there are invalid fields
     (() => {
     'use strict'
-
+    
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
     const forms = document.querySelectorAll('.needs-validation')
-
+    
     // Loop over them and prevent submission
     Array.from(forms).forEach(form => {
         form.addEventListener('submit', event => {
@@ -311,7 +266,7 @@
             event.preventDefault()
             event.stopPropagation()
         }
-
+    
         form.classList.add('was-validated')
         }, false)
     })

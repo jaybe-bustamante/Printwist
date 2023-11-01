@@ -20,7 +20,7 @@
     <!-- Google font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -30,10 +30,10 @@
 </head>
 <body>
     <!-- Header and Navbar -->
-    <header class="sticky-sm-top">
-        <nav class="navbar navbar-expand-lg py-md-2 sticky-top">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg py-md-2">
             <div class="container-xl">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="/">
                     <img class="img-fluid navbar-brand logo" src="images/Printwist-logo.png" alt="Printwist-logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarButtonMenu" aria-controls="navbarButtonMenu" aria-label="Toggle navigation">
@@ -199,16 +199,118 @@
 
 
     <!-- Product item Content -->
-    <section class="sec py-4 container-md">
-        <div class="row justify-content-center">
-            <h1 class="text-center m-5">Sorry.. Not Finish with this Part yet.😉</h1>
+    <section class="container-fluid sec py-4">
+        <h4 class="h4 text-center mb-5 bold">Mock-up and Pricing</h4>
+        <div class="container-lg px-0">
+            <div class="h5 text-center mb-5">Congrats! You're just 1 step away from earning from your created design.</div>
+            <div class="d-flex flex-wrap justify-content-center">
+
+                <div class="carousel slide border-0 mockupcontainer mb-4 shadow-sm" id="mockup-carousel">
+
+                    <div class="carousel-indicators">
+                        <div type="button" data-bs-target="#mockup-carousel" data-bs-slide-to="0" class="active indicator-1"></div>
+                        <div type="button" data-bs-target="#mockup-carousel" data-bs-slide-to="1" class="indicator-2"></div>
+                        <div type="button" data-bs-target="#mockup-carousel" data-bs-slide-to="2" class="indicator-3"></div>
+                        <div type="button" data-bs-target="#mockup-carousel" data-bs-slide-to="3" class="indicator-4"></div>
+                        <div type="button" data-bs-target="#mockup-carousel" data-bs-slide-to="4" class="indicator-5"></div>
+                    </div>
+
+                    <div class="carousel-inner">
+                        
+                        <div class="carousel-item active  mcarousel ">
+                            <img src="images/tslide-1.jpg" alt="mockup-1" class="img-fluid">
+                        </div>
+
+                        <div class="carousel-item mcarousel ">
+                            <img src="images/tslide-2.jpg" alt="mockup-2" class="img-fluid">
+                        </div>
+
+                        <div class="carousel-item  mcarousel ">
+                            <img src="images/tslide-3.jpg" alt="mockup-3" class="img-fluid">
+                        </div>
+
+                        <div class="carousel-item  mcarousel ">
+                            <img src="images/tslide-4.jpg" alt="mockup-4" class="img-fluid">
+                        </div>
+
+                        <div class="carousel-item mcarousel ">
+                            <img src="images/tslide-5.jpg" alt="mockup-5" class="img-fluid">
+                        </div>
+                        
+                    </div>
+
+
+                </div>
+
+                <div class="mx-sm-4 mx-1">
+                    <div class="h6 mb-2">You can download your generated mock-ups below.</div>
+                    <a href="images/Mock-ups.zip"><button type="button" class="btn btn-sm ptbtn1 mb-3">Download Now</button></a>
+
+                    <input type="text" class="form-control form-text mb-2 fst-italic" style="font-size: 0.8rem;" value="httfpsasadsda.caommp=12312.com" disabled>
+                    <div class="h6 mb-4">Copy the link above and Share it to any social media.</div>
+
+                    <div class="h5 medium">Pricing</div>
+                    <div class="h6">Your item total Price is <b class="h5 bold ">₱ 450.00</b> </div>
+                    <div class="pp fst-italic mb-3">(Print and Shipping included)</div>
+
+                    <div class="h5">Suggested Prices and Earnings</div>
+                    <table class="table table-responsive table-sm table-hover table-bordered m-0">
+                        <thead class="">
+                            <th>Price</th>
+                            <th>Earning / 10 sold</th>
+                            <th>Earning / 100 sold</th>
+                        </thead>
+                        <tbody class="tab-content">
+                            <tr>
+                                <td>₱499</td>
+                                <td class="medium">₱490</td>
+                                <td class="bold">₱4900</td>
+                            </tr>
+                            <tr>
+                                <td>₱520</td>
+                                <td class="medium">₱700</td>
+                                <td class="bold">₱7000</td>
+                            </tr>
+                            <tr>
+                                <td>₱550</td>
+                                <td class="medium">₱1000</td>
+                                <td class="bold">₱10,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="pp small-text fst-italic mb-3">Above are just suggested Pricing. You can set you're own Price below.</div>
+
+                    <form class="needs-validation" action="listed.html" novalidate>
+                        <div class="form-label m-0 medium">Set Your Price:</div>
+                        
+                        <div class="input-group d-flex align-items-center justify-content-center">
+
+                            <label class="input-group-text medium ptcolor border-1 border-primary border-opacity-25">₱</label>
+                            <input type="number" class="ptcolor form-control border-1 border-primary border-opacity-25 rounded-end-2" min="499" max="650" style="min-width: 5rem; max-width: 8rem;" required>
+                            <div>
+                                <button type="submit" class="btn ptbtn1 btsm ms-3 rounded-2 my-3">List Product Now</button>
+                            </div>
+                            <div class="text-center small-text bg-danger translate-middle-y invalid-tooltip border-0">
+                                Please put your pricing. Range: 499 to 650.
+                            </div>
+                            
+                        </div>  
+                            
+                    </form>
+
+
+                </div>
+
+
+            </div>
+
         </div>
     </section>
 
 
 
    <!-- Footer -->
-   <footer class="ptfooter pt-5 less-content-footer">
+   <footer class="ptfooter pt-5">
     <div class="container-md">
         <div class="d-flex flex-wrap justify-content-md- justify-content-around align-items-center mx-xl-3">
             <div class="ptlogo">
@@ -246,25 +348,25 @@
 
     <!-- Needs Validation script -->
     <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
     (() => {
-        'use strict'
-
+    'use strict'
+    
     // Fetch all the forms we want to apply custom Bootstrap validation styles to
     const forms = document.querySelectorAll('.needs-validation')
-
+    
     // Loop over them and prevent submission
     Array.from(forms).forEach(form => {
-    form.addEventListener('submit', event => {
-    if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-    }
-
-    form.classList.add('was-validated')
-    }, false)
-})
-})()
+        form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+        }
+    
+        form.classList.add('was-validated')
+        }, false)
+    })
+    })()
     </script>
 </body>
 </html>
