@@ -4,9 +4,9 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CMYYX7DTWW"></script>
     <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
     
     gtag('config', 'G-CMYYX7DTWW');
     </script>
@@ -44,7 +44,7 @@
                         <a href="index.html"> <img src="images/Printwist-logo.png" class="img-fluid offcanvaslogo"></a>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body">
+                    <div class="offcanvas-body align-items-center">
                         <ul class="navbar-nav me-auto">
                             <br>
                             <li  class="nav-item dropdown">
@@ -75,8 +75,15 @@
                             
                         </ul>
                         <div class="d-flex">
-                            <button class="btn btn-sm ptbtn1 me-3 align-self-center" type="button" data-bs-toggle="modal" data-bs-target="#loginmodal"><i class="bi bi-person-fill"></i> Log In</button>
-                            <a class=" btn btn-sm ptbtn2 align-self-center" type="button" data-bs-toggle="modal" data-bs-target="#regmodal"><i class="bi bi-person-fill-add"></i> Register</a>
+                            <div class="dropdown2">
+                                <button class="btn me-3 align-self-center" type="button"><img src="images/EKIEL-LOGO2.jpg" alt="user-logo" class="img-fluid rounded-5" style="max-width: 32px;"></button>
+                                <div class="dropdown-content2">
+                                    <a class="a-link" href="profile.html">Profile</a>
+                                    <a class="a-link" href="dashboard.html">Dashboard</a>
+                                    <a class="a-link" href="/">Log-out</a>
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -84,130 +91,175 @@
         </nav>
     </header>
     
-    <!-- Log-in Modal -->
-    <div class="modal fade" id="loginmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-
-                <div class="modal-header border-0 py-4">
-                    <div class="">
-                        <a href="index.html">
-                            <img src="images/Printwist-logo-footer.png" class="img-fluid modal-logo">
-                        </a>
-                    </div>
-                    <button type="button" class="modal--close" data-bs-dismiss="modal"><i class="bi-x-circle-fill"></i></button>
-                </div>
-        
-                <div class="modal-body">
-                    <div class="h4 bold mt-3 text-center">Welcome Back!</div>
-
-                    <form class="needs-validation" action="dashboard.html" novalidate>
-                    
-                        <div class="row mx-sm-4 mx-3 mt-4">
-                            <label class="form-label pp">Email:</label>
-                            <input type="email" class="form-control" required>
-                        </div>
-                    
-                        <div class="row mx-sm-4 mx-3 mt-4">
-                            <label class="form-label pp">Password:</label>
-                            <input type="password" class="form-control" required>
-                        </div>
-                    
-                        <div class="row mx-sm-4 mx-3 mt-2">
-                            <a class="pp a-link" href="contactus.html">Forgot Password?</a>
-                        </div>
-                    
-                        <div class="" style="height: 40px;"></div>
-
-                        <div class="col text-center">
-                            <input class="btn ptbtn1 px-5" type="submit" value="Log In">
-                        </div>
-
-                        <div class="col my-4 mb-5 text-center" >
-                            Don't have an Account? <a class="a-link medium" type="button" data-bs-toggle="modal" data-bs-target="#regmodal">Register Now</a>
-                        </div>  
-
-                    </form>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Register Modal -->
-    <div class="modal fade" id="regmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-2" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-
-                <div class="modal-header border-0 py-4">
-                    <div class="">
-                        <a href="index.html">
-                            <img src="images/Printwist-logo-footer.png" class="img-fluid modal-logo">
-                        </a>
-                    </div>
-                    <button type="button" class="modal--close" data-bs-dismiss="modal"><i class="bi-x-circle-fill"></i></button>
-                </div>
-        
-                <div class="modal-body">
-                    <div class="h4 bold mt-3 text-center">Create an Account</div>
-
-                    <form class="needs-validation" action="dashboard.html" novalidate>
-                    
-                        <div class="row mx-sm-4 mx-3 mt-4">
-                            <label class="form-label pp">Name:</label>
-                            <input type="text" class="form-control" required>
-                        </div>
-
-                        <div class="row mx-sm-4 mx-3 mt-3">
-                            <label class="form-label pp">Email:</label>
-                            <input type="email" class="form-control" required>
-                        </div>
-                    
-                        <div class="row mx-sm-4 mx-3 mt-3">
-                            <label class="form-label pp">Password:</label>
-                            <input type="password" class="form-control" required>
-                        </div>
-
-                        <div class="row mx-sm-4 mx-3 mt-3">
-                            <label class="form-label pp">Confirm Password:</label>
-                            <input type="password" class="form-control" required>
-                        </div>
-
-                        <div class="row mx-sm-3 mt-2">
-                            <div class="row input-group">
-                                <div><input type="checkbox" class="form-check-input col" id="tncod" name="tncod" required><span class="form-check-label pp"> I have read the <a class="a-link medium" href="privacy-terms.html">Terms & Condition</a>. </span></div>
-                            </div>
-                        </div>
-
-                        <div class="" style="height: 40px;"></div>
-
-                        <div class="col text-center">
-                            <input class="btn ptbtn1 px-5" type="submit" value="Register">
-                        </div>
-
-                        <div class="col my-4 mb-5 text-center" >
-                            Already have an Account? <a class="a-link medium" type="button" data-bs-toggle="modal" data-bs-target="#loginmodal">Log in now</a>
-                        </div>  
-
-                    </form>
-
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 
     <section class="sec py-4 container-md">
-        <div class="row justify-content-center">
-            <h1 class="text-center m-5">Sorry.. Not Finish with this Part yet.😉</h1>
+
+        <div class="container-xl px-3">
+            <h3 class="h3 bold text-center mb-3">Designer Dashboard</h3>
+            
+            <div class="d-flex flex-column flex-md-row mb-4 gap-3">
+                <!-- Account Information -->
+                <div class="card col">
+                    <div class="card-header ptcolor medium">
+                        Account Information
+                    </div>
+                    <div class="card-body">
+                        <!-- Display designer's account info here -->
+                        <p>Name: Designer's Name</p>
+                        <p>Email: designersemail@gmail.com</p>
+                        <p>Member Since: January 28, 2023</p>
+                    </div>
+                </div>
+                
+                <!-- Store Statistics -->
+                <div class="card col">
+                    <div class="card-header ptcolor medium">
+                        Store Statistics
+                    </div>
+                    <div class="card-body">
+                        <p>Total Items in Store: <span class="medium">15</span></p>
+                        <p>Total Items Sold: <span class="medium">30</span></p>
+                        <p>Total Income: <span class="medium">₱14500</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex gap-3">
+                <div class="table-responsive-md col my-3">
+                    <table class="table table-bordered rounded-3">
+                        <thead class="">
+                            <th>Product</th>
+                            <th>Type</th>
+                            <th>Size</th>
+                            <th>Quantity</th>
+                            <th>Total Sales</th>
+                        </thead>
+                        <tbody class="">
+                            <tr>
+                                <td>Blessed</td>
+                                <td>T-shirt</td>
+                                <td>XL</td>
+                                <td>3</td>
+                                <td>₱1500</td>
+                            </tr>
+                            <tr>
+                                <td>Blessed</td>
+                                <td>Hoddies</td>
+                                <td>XL</td>
+                                <td>5</td>
+                                <td>₱3800</td>
+                            </tr>
+                            <tr>
+                                <td>Samurai Helm</td>
+                                <td>T-shirt</td>
+                                <td>L</td>
+                                <td>5</td>
+                                <td>₱2500</td>
+                            </tr>
+                            <tr>
+                                <td>Samurai Helm</td>
+                                <td>T-shirt</td>
+                                <td>XXL</td>
+                                <td>2</td>
+                                <td>₱1200</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col my-3">
+                    <div class="card col">
+                        <div class="card-header ptcolor medium bg-white ">
+                            Request Payout
+                        </div>
+                        <div class="card-body">
+                            <p class="text-center">Your Total Earnings available for Payout: <span class="medium">₱14500</span></p>
+                            <div class="">
+                                <button class="btn ptbtn1 d-block mx-auto mb-3 btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#payoutrequest">Request Payout Now</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+        
+        
     </section>
 
+    <div class="modal fade" id="payoutrequest" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header border-0 py-4">
+                    <div class="">
+                        <a href="index.html">
+                            <img src="images/Printwist-logo-footer.png" class="img-fluid modal-logo">
+                        </a>
+                    </div>
+                    <button type="button" class="modal--close" data-bs-dismiss="modal"><i class="bi-x-circle-fill"></i></button>
+                </div>
+        
+                <div class="modal-body">
+                    <div class="h5 bold mt-3 text-center">Please fill the info below</div>
+
+                    <form class="needs-validation" action="dashboard.html" novalidate>
+                    
+                        <div class="row mx-sm-4 mx-3 mt-4">
+                            <label class="form-label pp">Email:</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+
+                        <div class="row mx-sm-4 mx-3 mt-4">
+                            <label class="form-label pp">Choose your payment gateway</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Gcash
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" disabled >
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  Bank Deposit 
+                                </label>
+                                <p class="pp fst-italic small-text text-danger">Bank Deposit is temporary unavailable.</p>
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="row mx-sm-4 mx-3 mt-4">
+                            <label class="form-label pp">Enter Gcash Account:</label>
+                            <input type="number" class="form-control" required>
+                        </div>
+                    
+                        <div class="row mx-sm-4 mx-3 mt-4">
+                            <label class="form-label pp">Password:</label>
+                            <input type="password" class="form-control" required>
+                        </div>
+                    
+                    
+                        <div class="" style="height: 40px;"></div>
+
+                        <div class="col text-center">
+                            <input class="btn ptbtn1 px-5" type="submit" value="Submit">
+                        </div>
+
+                        <div class="col my-4 mb-5 text-center" >
+                           
+                        </div>  
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-   <!-- Footer -->
-   <footer class="ptfooter pt-5 less-content-footer">
+    <!-- Footer -->
+    <footer class="ptfooter pt-5">
     <div class="container-md">
         <div class="d-flex flex-wrap justify-content-md- justify-content-around align-items-center mx-xl-3">
             <div class="ptlogo">
@@ -239,21 +291,21 @@
 
     <!-- Bootstrap script -->
     <script 
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
 
     </script>
 
     <!-- Needs Validation script -->
     <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
-(() => {
-'use strict'
+    (() => {
+        'use strict'
 
-// Fetch all the forms we want to apply custom Bootstrap validation styles to
-const forms = document.querySelectorAll('.needs-validation')
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation')
 
-// Loop over them and prevent submission
-Array.from(forms).forEach(form => {
+    // Loop over them and prevent submission
+    Array.from(forms).forEach(form => {
     form.addEventListener('submit', event => {
     if (!form.checkValidity()) {
         event.preventDefault()
