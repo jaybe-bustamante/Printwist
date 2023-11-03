@@ -4,9 +4,9 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CMYYX7DTWW"></script>
     <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
     
     gtag('config', 'G-CMYYX7DTWW');
     </script>
@@ -20,20 +20,20 @@
     <!-- Google font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <script defer src="entrance.js"></script>
 
-    <title>Product/title>
+    <title>Product</title>
 </head>
 <body>
     <!-- Header and Navbar -->
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg py-md-2 sticky-top">
+        <nav class="navbar navbar-expand-lg py-md-2">
             <div class="container-xl">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="/">
                     <img class="img-fluid navbar-brand logo" src="images/Printwist-logo.png" alt="Printwist-logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarButtonMenu" aria-controls="navbarButtonMenu" aria-label="Toggle navigation">
@@ -199,16 +199,127 @@
 
 
     <!-- Product item Content -->
-    <section class="sec py-4 container-md">
-        <div class="row justify-content-center">
-            <h1 class="text-center m-5">Sorry.. Not Finish with this Part yet.😉</h1>
+    <section class="container-fluid py-4">
+
+        <div class="container-lg px-0">
+            <div class="d-flex flex-wrap justify-content-center">
+
+                <div class="carousel slide border-0 mockupcontainer2 mb-4 shadow" id="mockup-carousel">
+
+                    <div class="carousel-indicators">
+                        <a type="button" data-bs-target="#mockup-carousel" data-bs-slide-to="0" class="active indicator-1"></a>
+                        <a type="button" data-bs-target="#mockup-carousel" data-bs-slide-to="1" class="indicator-2"></a>
+                        <a type="button" data-bs-target="#mockup-carousel" data-bs-slide-to="2" class="indicator-3"></a>
+                        <a type="button" data-bs-target="#mockup-carousel" data-bs-slide-to="3" class="indicator-4"></a>
+                        <a type="button" data-bs-target="#mockup-carousel" data-bs-slide-to="4" class="indicator-5"></a>
+                    </div>
+
+                    <div class="carousel-inner">
+                        
+                        <div class="carousel-item active  mcarousel2 ">
+                            <img src="images/tslide-1.jpg" alt="mockup-1" class="img-fluid">
+                        </div>
+
+                        <div class="carousel-item mcarousel2 ">
+                            <img src="images/tslide-2.jpg" alt="mockup-2" class="img-fluid">
+                        </div>
+
+                        <div class="carousel-item  mcarousel2 ">
+                            <img src="images/tslide-3.jpg" alt="mockup-3" class="img-fluid">
+                        </div>
+
+                        <div class="carousel-item  mcarousel2 ">
+                            <img src="images/tslide-4.jpg" alt="mockup-4" class="img-fluid">
+                        </div>
+
+                        <div class="carousel-item mcarousel2 ">
+                            <img src="images/tslide-5.jpg" alt="mockup-5" class="img-fluid">
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div class="mx-sm-4 mx-1">
+                    <h4 class="h4 mb-2 bold">Product Name</h4>
+                    <div class="pp mb-4">Designed by <a class="a-link medium" href="profile.html">DesignerName</a> </div>
+
+                    <div class="h3 mb-0 medium">₱549</div>
+                    <div class="pp mb-3 small fst-italic mb-3">Free Shipping to any point of Philippines</div>
+
+                    <div class="h6 medium">Style</div>
+                    <div class="card mb-4">
+                        <div class="card-body p-1">
+                            <div class="d-flex">
+                                <img class="img-fluid" src="images/mu-1.jpg" style="max-width: 3rem;">
+                                <div class="px-1">
+                                    <p class="pp medium m-0">
+                                        Classic T-Shirt
+                                    </p>
+                                    <p class="pp small-text text-wrap p-0 m-0" style="max-width: 35ch;" >
+                                        90% Cotton/10% Poly, Casual tees, crew neck, generous fit, <b>DTF Print</b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="h6 p-0 m-0 medium">Color</div>
+                    <div class="d-flex mb-4">
+                        <div class="">⬜ White</div>
+                    </div>
+
+                    <div class="h6 p-0 m-0 medium">Size</div>
+                    <form class=" needs-validation" action="register.html" novalidate>
+                        <div class="d-flex mb-4 gap-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="size" id="med">
+                                <label class="form-check-label" for="med">M</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="size" id="lg">
+                                <label class="form-check-label" for="lg">L</label>
+                            </div>
+                            <div class="form check">
+                                <input class="form-check-input" type="radio" name="size" id="xl">
+                                <label class="form-check-label" for="xl">XL</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="size" id="XXL">
+                                <label class="form-check-label" for="XXL">XXL</label>
+                            </div>
+                        </div>
+
+                        <div class="form-label m-0 medium">Set Your Quantity:</div>
+                        
+                        <div class="input-group d-flex align-items-center justify-content-center">
+                            
+                            <input type="number" class="ptcolor form-control border-1 border-primary border-opacity-25 rounded-end-2" min="1" max="100" style="min-width: 5rem; max-width: 8rem;" required>
+
+                            <div>
+                                <button type="submit" class="btn ptbtn1 px-4 btsm ms-3 rounded-2 my-3">Add to Cart</button>
+                            </div>
+                            <div class="text-center small-text bg-danger translate-middle-y invalid-tooltip border-0">
+                                Please put the Quantity.
+                            </div>
+                            
+                        </div>  
+                            
+                    </form>
+
+
+                </div>
+
+
+            </div>
+
         </div>
     </section>
 
 
 
-   <!-- Footer -->
-   <footer class="ptfooter pt-5 less-content-footer">
+    <!-- Footer -->
+    <footer class="ptfooter pt-5">
     <div class="container-md">
         <div class="d-flex flex-wrap justify-content-md- justify-content-around align-items-center mx-xl-3">
             <div class="ptlogo">
@@ -246,25 +357,25 @@
 
     <!-- Needs Validation script -->
     <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (() => {
-        'use strict'
-
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    const forms = document.querySelectorAll('.needs-validation')
-
-    // Loop over them and prevent submission
-    Array.from(forms).forEach(form => {
-    form.addEventListener('submit', event => {
-    if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-    }
-
-    form.classList.add('was-validated')
-    }, false)
-})
-})()
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (() => {
+             'use strict'
+    
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            const forms = document.querySelectorAll('.needs-validation')
+    
+        // Loop over them and prevent submission
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+    
+                form.classList.add('was-validated')
+                }, false)
+        })
+        })()
     </script>
 </body>
 </html>

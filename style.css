@@ -804,6 +804,65 @@ body {
     @media (width < 985px) {
         .dropdown-content2 {
             left: 0;
+        }   
+    }
+
+    .cart {
+        font-size: 1.6rem !important;
+        color: #2d609c !important;
+    }
+
+    .cart:hover {
+        font-weight: 700 !important;
+        color: #266cbb !important;
+    }
+
+
+    .mockupcontainer2 {
+        max-width: 32.5rem;
+    }
+
+    .mcarousel2 {
+        max-width: 32.5rem;
+    }
+
+    .carousel-indicators a {
+        width: 5.7rem !important;
+        height: 5.7rem !important;
+        margin-inline:  .25rem !important;
+    }
+
+    @media (width < 555px) {
+        .carousel-indicators a {
+            width: 15.5vw !important;
+            height: 15.5vw !important;
+            margin-inline:  .7vw !important;
+        }
+        
+    }
+
+
+    .checkoutx {
+        top: .6rem;
+        right: .7rem;
+    }
+
+    .profile-header {
+        background-image: url(images/profileheader.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        min-height: 30vh;
+    }
+
+    .profilepic {
+        bottom: -30px;
+
+    }
+
+    @media (width < 1024px) {
+        .profilepic {
+            bottom: -10px;
         }
         
     }

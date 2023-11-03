@@ -26,14 +26,14 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <script defer src="entrance.js"></script>
 
-    <title>T-Shirt Products</title>
+    <title>Register</title>
 </head>
 <body>
     <!-- Header and Navbar -->
     <header class="sticky-top">
-        <nav class="navbar navbar-expand-lg py-md-2 sticky-top">
+        <nav class="navbar navbar-expand-lg py-md-2">
             <div class="container-xl">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="/">
                     <img class="img-fluid navbar-brand logo" src="images/Printwist-logo.png" alt="Printwist-logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarButtonMenu" aria-controls="navbarButtonMenu" aria-label="Toggle navigation">
@@ -82,7 +82,7 @@
                 </div>
             </div>
         </nav>
-</header> 
+    </header>
     
     <!-- Log-in Modal -->
     <div class="modal fade" id="loginmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -101,7 +101,7 @@
                 <div class="modal-body">
                     <div class="h4 bold mt-3 text-center">Welcome Back!</div>
 
-                    <form class="needs-validation" action="dashboard.html" novalidate>
+                    <form class="needs-validation" action="productregistered.html" novalidate>
                     
                         <div class="row mx-sm-4 mx-3 mt-4">
                             <label class="form-label pp">Email:</label>
@@ -151,7 +151,7 @@
                 <div class="modal-body">
                     <div class="h4 bold mt-3 text-center">Create an Account</div>
 
-                    <form class="needs-validation" action="dashboard.html" novalidate>
+                    <form class="needs-validation" action="productregistered.html" novalidate>
                     
                         <div class="row mx-sm-4 mx-3 mt-4">
                             <label class="form-label pp">Name:</label>
@@ -197,37 +197,56 @@
     </div>
 
 
-    <!-- Page Content -->
-    <section class="sec py-4">
-        <h4 class="h4 text-center mb-5 bold">Upload you Design</h4>
-        <div class="container-md">
-            <div class="d-flex justify-content-center mb-5">
-                <form class="needs-validation" action="register2.html" id="uploadform" novalidate>
-                    <h6 class="h6"> Upload you design here</h6>
-                    <div class="d-flex input-group mb-3">
-                        <input type="file" accept=".png, .jpg, .jpeg" style="color: #2d609c;" class="form-control" id="inputGroupFile02" required>
-                        <button class="input-group-text" style="color: #2d609c;" for="inputGroupFile02" type="submit"><span class="spinner-border spinner-border-sm"></span>&nbsp; Upload</button>
-                        <div class="pp"></div> 
-                    </div>
-                    <label class="pp">*Accepts JPG, JPEG and PNG file with White or transparent background.</label>
-                </form>
-            </div>
-            <hr class="w-75 d-block mx-auto">
-            <h5 class="h6 medium text-center mt-5">Adjust the size and placement of your design.</h5>
-            <div class="d-flex justify-content-center my-4">
-                <div class="col-md-6">        
-                    <img src="images/layout.jpg" class="img-fluid w-100">
-                </div>
-            </div>
-            
-            <div class="row text-center">
-                <div>
-                    <button type="submit" form="uploadform" class="btn ptbtn1 text-center" id="mockupgen" >Generate Mockup</button>
-                </div>
-            </div>
-            
-        </div>
 
+    <!-- Product item Content -->
+    <section class="container-fluid my-3 py-4">
+        <div class="d-flex justify-content-center">
+            <div class="card px-3 shadow border-0">
+                <div class="card-header border-0 bg-white">
+                    <div class="ptcolor h4 bold mt-3 text-center">Create an Account</div>
+                </div>
+
+            <form class=" needs-validation" action="productregistered.html" novalidate>
+            
+                <div class="row mx-sm-4 mx-3 mt-4">
+                    <label class="ptcolor form-label pp">Name:</label>
+                    <input type="text" class="form-control" required>
+                </div>
+
+                <div class="row mx-sm-4 mx-3 mt-3">
+                    <label class="ptcolor form-label pp">Email:</label>
+                    <input type="email" class="form-control" required>
+                </div>
+            
+                <div class="row mx-sm-4 mx-3 mt-3">
+                    <label class="ptcolor form-label pp">Password:</label>
+                    <input type="password" class="form-control" required>
+                </div>
+
+                <div class="row mx-sm-4 mx-3 mt-3">
+                    <label class="ptcolor form-label pp">Confirm Password:</label>
+                    <input type="password" class="form-control" required>
+                </div>
+
+                <div class="row mx-sm-3 mt-2">
+                    <div class="row input-group">
+                        <div><input type="checkbox" class="form-check-input col" id="tncod" name="tncod" required><span class="form-check-label ptcolor pp"> I have read the <a class="a-link medium" href="privacy-terms.html">Terms & Condition</a>. </span></div>
+                    </div>
+                </div>
+
+                <div class="" style="height: 40px;"></div>
+
+                <div class="col text-center">
+                    <input class="btn ptbtn1 px-5" type="submit" value="Register">
+                </div>
+
+                <div class="col my-4 mb-5 text-center ptcolor" >
+                    Already have an Account? <a class="a-link medium" type="button" data-bs-toggle="modal" data-bs-target="#loginmodal">Log in now</a>
+                </div>  
+
+            </form>
+
+        </div>
     </section>
 
 
@@ -261,35 +280,35 @@
             © 2023 Printwist All rights reserved.
         </div>
     </div>
-</footer>    
+    </footer>    
 
-<!-- Bootstrap script -->
-<script 
-src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+    <!-- Bootstrap script -->
+    <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
 
-</script>
+    </script>
 
-<!-- Needs Validation script -->
-<script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-(() => {
-'use strict'
-
-// Fetch all the forms we want to apply custom Bootstrap validation styles to
-const forms = document.querySelectorAll('.needs-validation')
-
-// Loop over them and prevent submission
-Array.from(forms).forEach(form => {
-    form.addEventListener('submit', event => {
-    if (!form.checkValidity()) {
-        event.preventDefault()
-        event.stopPropagation()
-    }
-
-    form.classList.add('was-validated')
-    }, false)
-})
-})()
-</script>
+    <!-- Needs Validation script -->
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (() => {
+    'use strict'
+    
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation')
+    
+    // Loop over them and prevent submission
+    Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+        }
+    
+        form.classList.add('was-validated')
+        }, false)
+    })
+    })()
+    </script>
 </body>
 </html>
